@@ -1,4 +1,4 @@
-CFLAGS ?= -Wall -Wextra -Iinclude
+CFLAGS ?= -Wall -Wextra -I include
 
 all: systat
 
