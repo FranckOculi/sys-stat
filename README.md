@@ -1,3 +1,5 @@
+# Systat - C version
+
 ## Description
 A lightweight system monitoring daemon written in C that runs in the background to collect system performance metrics such as CPU load, memory consumption and uptime. The daemon exposes a local socket server, allowing client applications to securely connect and retrieve real-time metrics on demand (every 2 seconds).
 
