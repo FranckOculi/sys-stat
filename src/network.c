@@ -82,7 +82,7 @@ int run(void close_log_file()) {
         exit(EXIT_FAILURE);
     };
 
-        print_log(stdout, "Waiting for new connection...\n");
+    print_log(stdout, "Waiting for new connection...\n");
 
     /**
      * fcntl() is used to manipulate a file descriptor.
@@ -152,7 +152,6 @@ int run(void close_log_file()) {
             int received_bytes;
 
             while((received_bytes = recv(connected_socket, rec_buffer, BUFFER_SIZE - 1, 0)) > 0) {
-
                 /* Ensure buffer is 0-terminated.  */
                 rec_buffer[received_bytes] = '\0';
                 print_log(stdout, "(Server) message received : %s\n", rec_buffer);
